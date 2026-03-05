@@ -10,5 +10,7 @@ function love.conf(t)
     t.console   = true -- Set to false before export
     t.realse    = false --Enables realse mode
 
-
+    t.window.width  = 800
+    t.window.height = 500
+    t.window.fullscreen = false
 end
