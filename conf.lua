@@ -6,7 +6,7 @@ function love.conf(t)
     t.ur        = nil --put to the itch link later
 
     t.identity  = nil --set to the save diretory
-    t.version   = "0.0.1"
+    t.version   = "11.5" --version of love game was made in
     t.console   = true -- Set to false before export
     t.realse    = false --Enables realse mode
 
