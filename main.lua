@@ -17,7 +17,7 @@ function love.load()
 
 
     --love.window.setMode(800,500) -- this sets the screen size to 800 by 500
-    splashy.addSplash(love.graphics.newImage("images/test-splash.png"))
+    --splashy.addSplash(love.graphics.newImage("images/test-splash.png")) --test image may need to be commented out for rest to work
 end
 
 function love.draw()
