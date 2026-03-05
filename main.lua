@@ -1,4 +1,6 @@
 splashy = require 'libs/splashy'
+settings = require 'menus/setting_menu'
+
 
 local screenWidth
 local screenHeight
