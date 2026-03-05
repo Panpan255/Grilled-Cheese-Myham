@@ -18,7 +18,7 @@ function love.load()
       --  splash.addSplash(love.graphics.newImage(images/HD/love-splash.png)) -- splash for 1920 by 1080
        -- print("slpash screen for HD is setup") -- comment out later this is for debug
     --end
-    splashy.addSplash(love.graphics.newImage(images/Mini/love-splash.png))
+    splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png"))
 
 
     --love.window.setMode(800,500) -- this sets the screen size to 800 by 500
