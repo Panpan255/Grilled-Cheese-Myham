@@ -12,5 +12,5 @@ function love.draw()
 end
 
 function love.update(dt)
-    splashy.update(dt)
+    splashy.update(dt) -- this makes sure that splashscreeens can update
 end
