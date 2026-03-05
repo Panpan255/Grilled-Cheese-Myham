@@ -10,3 +10,7 @@ function love.draw()
     splashy.draw()
     love.graphics.print("hello world", 500, 300)
 end
+
+function love.update(dt)
+    splashy.update(dt)
+end
