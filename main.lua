@@ -8,11 +8,11 @@ function love.load()
     print("debug mode is on") --comment this out on realse
     screenWidth, screenHeight = love.graphics.getDimensions()
     if screenWidth == 1280 and screenHeight == 720 then
-        splashy.addSplash(love.graphics.newImage(images/720p/love-splash.png)) -- this loades splash screen for 720p(1280x720)
+        splashy.addSplash(love.graphics.newImage(images/widescreen/love-splash.png)) -- this loades splash screen for 720p(1280x720)
     --elseif screenWidth == 800 and screenHeight == 500 then
-        --splash.addSplash(love.graphics.newImage(images/800x500/love-splash.png)) -- this loades the splash for 800x500
+        --splash.addSplash(love.graphics.newImage(images/Mini/love-splash.png)) -- this loades the splash for 800x500
     --elseif screenWidth == 1920 and screen height == 1080 then
-        --splash.addSplash(love.graphics.newImage(images/1080p/love-splash.png)) -- splash for 1920 by 1080
+        --splash.addSplash(love.graphics.newImage(images/HD/love-splash.png)) -- splash for 1920 by 1080
     end
 
 
