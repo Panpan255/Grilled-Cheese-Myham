@@ -1,8 +1,20 @@
 splashy = require 'libs/splashy'
 
+local screenWidth
+local screenHeight
+
+
 function love.load()
     print("debug mode is on") --comment this out on realse
-    love.window.setMode(800,500)
+    screenWidth, screenHeight = love.graphics.getDimensions()
+    if screenWidth = 1280 and screenHeight = 720 then
+        splashy.addSplash(love.graphics.newImage(images/720p/love-splash.png)) -- this loades splash screen for 720p
+    elseif screenWidth = 800 and screenHeight = 500 then
+        splash.addSplash(love.graphics.newImage(images/800x500/love-splash.png)) -- this loades the splash for 800x500
+    end
+
+
+    --love.window.setMode(800,500) -- this sets the screen size to 800 by 500
     splashy.addSplash(love.graphics.newImage("images/test-splash.png"))
 end
 
