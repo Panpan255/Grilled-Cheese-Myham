@@ -1,6 +1,6 @@
 splashy = require 'libs/splashy'
 
-unction love.load()
+function love.load()
     print("debug mode is on") --comment this out on realse
     splashy.addSplash(love.graphics.newImage("images/test-splash.png"))
     love.window.setMode(800,500)
