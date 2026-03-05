@@ -5,9 +5,14 @@ local screenHeight
 
 
 function love.load()
+    --printing for debug mode
     print("debug mode is on") --comment this out on realse
+    
+    -- checking screen size and printing them for debug
     screenWidth, screenHeight = love.graphics.getDimensions()
     print ("screen size", screenWidth, screenHeight) -- comment out this is debug
+    
+    --choicing splash screen based on screen size
     if screenWidth == 1280 and screenHeight == 720 then
         splashy.addSplash(love.graphics.newImage("images/widescreen/love-splash.png")) -- this loades splash screen for 720p(1280x720)
         print("splash screen for Widescreen is setup") -- comment out later this is for debug
