@@ -7,5 +7,6 @@ unction love.load()
 end
 
 function love.draw()
+    splashy.draw()
     love.graphics.print("hello world", 500, 300)
 end
