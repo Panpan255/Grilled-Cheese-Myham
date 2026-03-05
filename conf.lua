@@ -7,4 +7,5 @@ function love.conf(t)
 
     t.identity  = nil --set to the save diretory
     t.version   = "0.0.1"
+    t.console   = true -- Set to false before export
 end
