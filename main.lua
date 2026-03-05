@@ -21,11 +21,13 @@ function love.load()
     --splashy.addSplash(love.graphics.newImage("images/test-splash.png")) --test image may need to be commented out for rest to work
 end
 
+function love.update(dt)
+    splashy.update(dt) -- this makes sure that splashscreeens can update
+end
+
+
 function love.draw()
     splashy.draw()
     love.graphics.print("hello world", 500, 300)
 end
 
-function love.update(dt)
-    splashy.update(dt) -- this makes sure that splashscreeens can update
-end
