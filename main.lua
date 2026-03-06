@@ -22,6 +22,7 @@ function love.load()
     elseif screenWidth == 800 and screenHeight == 500 then
         print("splash screen for Mini setup") -- comment out later this is for debug
         splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png")) -- this loades the splash for 800x500
+        splashy.addSplash(love.graphics.NewImage("images/Mini/game-jam-splash.png"))
     elseif screenWidth == 1920 and screenHeight == 1080 then
         splashy.addSplash(love.graphics.newImage("images/HD/love-splash.png")) -- splash for 1920 by 1080
         print("slpash screen for HD is setup") -- comment out later this is for debug
