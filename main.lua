@@ -8,6 +8,9 @@ local screenSetting
 
 
 function love.load()
+     --printing for debug mode
+    print("debug mode is on") --comment this out on realse
+
     screenWidth, screenHeight = love.graphics.getDimensions()
 
     if screenWidth = 800 and screenHeight = 500 then
@@ -21,8 +24,7 @@ function love.load()
         print("screenSetting set to HD") --Debug comment out after
     end
     
-    --printing for debug mode
-    print("debug mode is on") --comment this out on realse
+   
     
     -- checking screen size and printing them for debug
     
