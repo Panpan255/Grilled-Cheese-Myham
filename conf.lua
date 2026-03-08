@@ -11,6 +11,6 @@ function love.conf(t)
     t.realse    = false --Enables realse mode
 
     t.window.width  = 1280
-    t.window.height = 720
+    t.window.height = 719
     t.window.fullscreen = false
 end
