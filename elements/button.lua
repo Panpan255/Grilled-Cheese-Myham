@@ -28,6 +28,11 @@ function quitButton(x, y)
 
 end
 
-function quitButton:draw()
-    
+function quitButton:draw(x, y)
+    button_x = x
+    button_y = y
+    image = love.graphics.newImage("images/buttons/Quit.png")
+
+
+    love.graphics.draw(image, x, y)
 end
