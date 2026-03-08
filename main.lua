@@ -11,8 +11,10 @@ function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
+    -- checking screen size 
     screenWidth, screenHeight = love.graphics.getDimensions()
 
+    -- Changing screen size setting 
     if screenWidth = 800 and screenHeight = 500 then
         screenSetting = "Mini"
         print("screenSetting set to mini") --Debug comment out after
@@ -26,20 +28,20 @@ function love.load()
     
    
     
-    -- checking screen size and printing them for debug
     
-    print ("screen size", screenWidth, screenHeight) -- comment out this is debug
+    
+    --print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
     --choicing splash screen based on screen size
-    if screenWidth == 1280 and screenHeight == 720 then
+    if screenSetting = "widescreen" then
         splashy.addSplash(love.graphics.newImage("images/widescreen/love-splash.png")) -- this loades splash screen for 720p(1280x720)
         spashy.addSplash(love.graphics.newImage("images/widescreen/game-jam-splash.png"))
         print("splash screen for Widescreen is setup") -- comment out later this is for debug
-    elseif screenWidth == 800 and screenHeight == 500 then
+    elseif screenSetting = "Mini" then
         print("splash screen for Mini setup") -- comment out later this is for debug
         splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png")) -- this loades the splash for 800x500
         splashy.addSplash(love.graphics.NewImage("images/Mini/game-jam-splash.png"))
-    elseif screenWidth == 1920 and screenHeight == 1080 then
+    elseif screenSetting = "HD" then
         splashy.addSplash(love.graphics.newImage("images/HD/love-splash.png")) -- splash for 1920 by 1080
         print("slpash screen for HD is setup") -- comment out later this is for debug
     end
