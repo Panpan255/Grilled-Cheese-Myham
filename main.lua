@@ -2,6 +2,7 @@ splashy = require 'libs/splashy'
 --settings = require 'menus/setting_menu'
 
 
+-- screen settings varables
 local screenWidth
 local screenHeight
 local screenSetting
