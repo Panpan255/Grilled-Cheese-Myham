@@ -30,7 +30,7 @@ function love.load()
     
     
     
-    --print ("screen size", screenWidth, screenHeight) -- comment out this is debug
+    print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
     --choicing splash screen based on screen size
     if screenSetting == "Widescreen" then
