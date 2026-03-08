@@ -5,7 +5,7 @@ splashy = require 'libs/splashy'
 -- screen settings varables
 local screenWidth
 local screenHeight
-local screenSetting
+local screenSetting -- can be set to Mini, Widescreen or HD
 
 
 function love.load()
