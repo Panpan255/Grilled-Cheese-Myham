@@ -4,13 +4,19 @@ settings = require 'menus/setting_menu'
 
 local screenWidth
 local screenHeight
+local screenSetting
 
 
 function love.load()
     screenWidth, screenHeight = love.graphics.getDimensions()
-    
-    
-    
+
+    if screenWidth = and screenHeight = then
+        screenSetting = "Mini"
+    elseif screenWidth = and screenHeight = then
+        screenSetting = "Widescreen"
+    elseif screenWidth = and screenHeight = then
+        screenSetting = "HD"
+    end
     
     --printing for debug mode
     print("debug mode is on") --comment this out on realse
