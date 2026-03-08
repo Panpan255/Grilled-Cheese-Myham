@@ -40,7 +40,7 @@ function love.load()
     elseif screenSetting == "Mini" then
         print("splash screen for Mini setup") -- comment out later this is for debug
         splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png")) -- this loades the splash for 800x500
-        splashy.addSplash(love.graphics.NewImage("images/Mini/game-jam-splash.png"))
+        splashy.addSplash(love.graphics.newImage("images/Mini/game-jam-splash.png"))
     elseif screenSetting == "HD" then
         splashy.addSplash(love.graphics.newImage("images/HD/love-splash.png")) -- splash for 1920 by 1080
         splashy.addSplash(love.graphics.newImage("images/HD/game-jam-splash.png"))
