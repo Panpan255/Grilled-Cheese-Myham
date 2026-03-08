@@ -10,12 +10,15 @@ local screenSetting
 function love.load()
     screenWidth, screenHeight = love.graphics.getDimensions()
 
-    if screenWidth = and screenHeight = then
+    if screenWidth = 800 and screenHeight = 500 then
         screenSetting = "Mini"
-    elseif screenWidth = and screenHeight = then
+        print("screenSetting set to mini") --Debug comment out after
+    elseif screenWidth =1280 and screenHeight = 720 then
         screenSetting = "Widescreen"
-    elseif screenWidth = and screenHeight = then
+        print("screenSetting set to Widescreen") --Debug comment out after
+    elseif screenWidth = 1920 and screenHeight = 1080 then
         screenSetting = "HD"
+        print("screenSetting set to HD") --Debug comment out after
     end
     
     --printing for debug mode
