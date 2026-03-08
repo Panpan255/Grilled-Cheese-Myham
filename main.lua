@@ -18,7 +18,7 @@ function love.load()
     if screenWidth == 800 and screenHeight == 500 then
         screenSetting = "Mini"
         print("screenSetting set to mini") --Debug comment out after
-    elseif screenWidth == 1280 and screenHeight == 720 then
+    elseif screenWidth == 1280 and screenHeight == 721 then
         screenSetting = "Widescreen"
         print("screenSetting set to Widescreen") --Debug comment out after
     elseif screenWidth == 1920 and screenHeight == 1080 then
