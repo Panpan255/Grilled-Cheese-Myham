@@ -17,3 +17,15 @@ function Button(text, func, func_param, width, height)
     text_x = 0,
     text_y = 0,
 end
+
+function quitButton(x, y)
+    button_x = x
+    button_y = y
+
+    func = function()
+        love.quit()
+    end
+
+    
+
+end
