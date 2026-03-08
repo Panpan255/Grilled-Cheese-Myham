@@ -26,6 +26,8 @@ function quitButton(x, y)
         love.quit()
     end
 
-    
+end
 
+function quitButton:draw()
+    
 end
