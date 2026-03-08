@@ -7,11 +7,16 @@ local screenHeight
 
 
 function love.load()
+    screenWidth, screenHeight = love.graphics.getDimensions()
+    
+    
+    
+    
     --printing for debug mode
     print("debug mode is on") --comment this out on realse
     
     -- checking screen size and printing them for debug
-    screenWidth, screenHeight = love.graphics.getDimensions()
+    
     print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
     --choicing splash screen based on screen size
