@@ -1,1 +1,0 @@
-local love = require "love"
