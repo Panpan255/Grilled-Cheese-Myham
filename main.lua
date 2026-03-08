@@ -34,7 +34,7 @@ function love.load()
     
     --choicing splash screen based on screen size
     if screenSetting == "Widescreen" then
-        splashy.addSplash(love.graphics.newImage("images/widescreen/love-splash.png")) -- this loades splash screen for 720p(1280x720)
+        splashy.addSplash(love.graphics.newImage("images/widescreen/Love-splash.png")) -- this loades splash screen for 720p(1280x720)
         splashy.addSplash(love.graphics.newImage("images/widescreen/game-jam-splash.png"))
         print("splash screen for Widescreen is setup") -- comment out later this is for debug
     elseif screenSetting == "Mini" then
