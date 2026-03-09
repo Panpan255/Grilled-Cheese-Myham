@@ -1,28 +1,48 @@
 splashy = require 'libs/splashy'
-settings = require 'menus/setting_menu'
+--settings = require 'menus/setting_menu'
 
 
+-- screen settings varables
 local screenWidth
 local screenHeight
+local screenSetting -- can be set to Mini, Widescreen or HD
 
 
 function love.load()
-    --printing for debug mode
+     --printing for debug mode
     print("debug mode is on") --comment this out on realse
-    
-    -- checking screen size and printing them for debug
+
+    -- checking screen size 
     screenWidth, screenHeight = love.graphics.getDimensions()
-    print ("screen size", screenWidth, screenHeight) -- comment out this is debug
+
+    -- Changing screen size setting 
+    if screenWidth == 800 and screenHeight == 500 then
+        screenSetting = "Mini"
+        print("screenSetting set to mini") --Debug comment out after
+    elseif screenWidth == 1280 and screenHeight == 721 then
+        screenSetting = "Widescreen"
+        print("screenSetting set to Widescreen") --Debug comment out after
+    elseif screenWidth == 1920 and screenHeight == 1080 then
+        screenSetting = "HD"
+        print("screenSetting set to HD") --Debug comment out after
+    end
+    
+   
+    
+    -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
     --choicing splash screen based on screen size
-    if screenWidth == 1280 and screenHeight == 720 then
-        splashy.addSplash(love.graphics.newImage("images/widescreen/love-splash.png")) -- this loades splash screen for 720p(1280x720)
+    if screenSetting == "Widescreen" then
+        splashy.addSplash(love.graphics.newImage("images/widescreen/Love-splash.png")) -- this loades splash screen for 720p(1280x720)
+        splashy.addSplash(love.graphics.newImage("images/widescreen/game-jam-splash.png"))
         print("splash screen for Widescreen is setup") -- comment out later this is for debug
-    elseif screenWidth == 800 and screenHeight == 500 then
+    elseif screenSetting == "Mini" then
         print("splash screen for Mini setup") -- comment out later this is for debug
         splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png")) -- this loades the splash for 800x500
-    elseif screenWidth == 1920 and screenHeight == 1080 then
+        splashy.addSplash(love.graphics.newImage("images/Mini/game-jam-splash.png"))
+    elseif screenSetting == "HD" then
         splashy.addSplash(love.graphics.newImage("images/HD/love-splash.png")) -- splash for 1920 by 1080
+        splashy.addSplash(love.graphics.newImage("images/HD/game-jam-splash.png"))
         print("slpash screen for HD is setup") -- comment out later this is for debug
     end
     
