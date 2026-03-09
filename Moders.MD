@@ -7,6 +7,8 @@ and I make code confussing a lot of the time so this file is here to help you ad
 to make your mods for the game 
 
 ## Splash Screens
+
+### why set should I set one up?
 I suggest you put in a splash screen because well it promots you and thats somthing that really use full at times also your a dev why not make sure people know it and people know what mod their using
 
 ### So how do you set one up?
@@ -29,6 +31,9 @@ splashy.addSplash(love.grpahics.newImage("Path-to-your-splash screen"))
 ```
 This is put into for every screen size I don't know why I did it this way but I did because I did 
 
+
+## Testing 
+while moding I suggest that you test your new code to make sure it works and that it works with all the screen sizes the reason why is because while I was coding I got splash screen problems with 720p due to the fact that love2d was changing 720 to 721 no mater what so I needed to adapt my code to that function in the love2D code.
 
 
 
