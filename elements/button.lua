@@ -1,4 +1,5 @@
 local love = require "love"
+local buttons = {}
 
 function Button(text, func, func_param, width, height)
     width = width or 100,
@@ -18,14 +19,12 @@ function Button(text, func, func_param, width, height)
     text_y = 0,
 end
 
-function quitButton(x, y)
+function  buttons.quit(x, y)
     button_x = x
     button_y = y
 
     func = function()
         love.quit()
     end
-
-    
 
 end
