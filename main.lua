@@ -29,7 +29,7 @@ function love.load()
     elseif screenWidth == 1280 and screenHeight == 720 then
         screenSetting = "Widescreen"
         print("screenSetting set to Widescreen") --Debug comment out after
-    else screenWidth == 1920 and screenHeight == 1080 then
+    elseif screenWidth == 1920 and screenHeight == 1080 then
         screenSetting = "HD"
         print("screenSetting set to HD") --Debug comment out after
     end
@@ -47,7 +47,7 @@ function love.load()
         print("splash screen for Mini setup") -- comment out later this is for debug
         splashy.addSplash(love.graphics.newImage("images/Mini/love-splash.png")) -- this loades the splash for 800x500
         splashy.addSplash(love.graphics.newImage("images/Mini/game-jam-splash.png"))
-    else screenSetting == "HD" then
+    elseif screenSetting == "HD" then
         splashy.addSplash(love.graphics.newImage("images/HD/love-splash.png")) -- splash for 1920 by 1080
         splashy.addSplash(love.graphics.newImage("images/HD/game-jam-splash.png"))
         print("slpash screen for HD is setup") -- comment out later this is for debug
