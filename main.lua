@@ -1,6 +1,13 @@
 splashy = require 'libs/splashy'
 --settings = require 'menus/setting_menu'
 
+-- lists
+items = {
+    bread = {},
+    cheese = {},
+    turkey = {},
+    ham = {},
+}
 
 -- screen settings varables
 local screenWidth
