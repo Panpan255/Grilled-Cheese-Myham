@@ -1,12 +1,7 @@
 local love = require "love"
 local buttons = {}
 
-local itemNumbers = {
-    bread = {},
-    cheese = {},
-    ham = {},
-    turkey = {},
-}
+
 
 function Button(text, func, func_param, width, height)
     width = width or 100,
@@ -71,10 +66,17 @@ function buttons.itemBox(x, y)
     button_x = x
     button_y = y
 
+    local itemNumbers = {
+    bread = {},
+    cheese = {},
+    ham = {},
+    turkey = {},
+}
+
     func = function()
         local itemNumber = love.math.random(1, 100)
 
-        if 
+        if itemNumber = 
 
     end
     
