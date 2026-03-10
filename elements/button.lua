@@ -40,6 +40,7 @@ function buttons.windowSize(x, y, windowSize)
     elseif windowSize == "widescreen"
         love.window.setMode(800, 500)
     elseif windowSize == "Mini" 
+        love.window.setMode(1920, 1080)
     end
 
 
