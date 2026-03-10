@@ -76,7 +76,6 @@ function buttons.itemBox(x, y)
     func = function()
         local itemNumber = love.math.random(1, 100)
 
-        if itemNumber = 
 
     end
     
