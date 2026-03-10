@@ -60,5 +60,12 @@ end
 -- end
 
 
-function buttons.itemBox()
+function buttons.itemBox(x, y)
+    button_x = x
+    button_y = y
+
+    func = function()
+        
+    end
+    
 end
