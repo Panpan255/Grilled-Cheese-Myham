@@ -50,13 +50,13 @@ function  buttons.quit(x, y)
 end
 
 
-function quitButton:draw(x, y)
-    button_x = x
-    button_y = y
-    image = love.graphics.newImage("images/buttons/Quit.png")
+-- function quitButton:draw(x, y)
+--     button_x = x
+--     button_y = y
+--     image = love.graphics.newImage("images/buttons/Quit.png")
 
 
-    love.graphics.draw(image, x, y)
-end
+--     love.graphics.draw(image, x, y)
+-- end
 
 
