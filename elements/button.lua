@@ -1,4 +1,5 @@
 local love = require "love"
+local buttons = {}
 
 function Button(text, func, func_param, width, height)
     width = width or 100,
@@ -18,7 +19,7 @@ function Button(text, func, func_param, width, height)
     text_y = 0,
 end
 
-function quitButton(x, y)
+function  buttons.quit(x, y)
     button_x = x
     button_y = y
 
@@ -27,6 +28,27 @@ function quitButton(x, y)
     end
 
 end
+<<<<<<< HEAD
+=======
+
+
+function buttons.windowSize(x, y, windowSize)
+    button_x = x
+    button_y = y
+
+    func = function(windowSize)
+    if windowSize == "HD" then
+        love.window.setMode(1280, 720)
+        resetGame()
+    elseif windowSize == "widescreen"
+        love.window.setMode(800, 500)
+        resetGame()
+    elseif windowSize == "Mini" 
+        love.window.setMode(1920, 1080)
+        resetGame()
+    end
+
+>>>>>>> size-grab
 
 function quitButton:draw(x, y)
     button_x = x
