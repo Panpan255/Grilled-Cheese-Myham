@@ -34,5 +34,11 @@ function buttons.windowSize(x, y, windowSize)
     button_x = x
     button_y = y
 
+    func = function(windowSize)
+    if windowSize == "HD" then
+    elseif windowSize == "widescreen"
+    elseif windowSize == "Mini" 
+    end
+
 
 end
