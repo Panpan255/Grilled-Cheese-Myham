@@ -19,15 +19,7 @@ function Button(text, func, func_param, width, height)
     text_y = 0,
 end
 
-function  buttons.quit(x, y)
-    button_x = x
-    button_y = y
 
-    func = function()
-        love.quit()
-    end
-
-end
 
 
 function buttons.windowSize(x, y, windowSize)
@@ -47,6 +39,17 @@ function buttons.windowSize(x, y, windowSize)
     end
 end
 
+function  buttons.quit(x, y)
+    button_x = x
+    button_y = y
+
+    func = function()
+        love.quit()
+    end
+
+end
+
+
 function quitButton:draw(x, y)
     button_x = x
     button_y = y
@@ -55,3 +58,5 @@ function quitButton:draw(x, y)
 
     love.graphics.draw(image, x, y)
 end
+
+
