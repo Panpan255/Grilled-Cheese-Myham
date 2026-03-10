@@ -29,7 +29,7 @@ function love.load()
     elseif screenWidth == 1280 and screenHeight == 720 then
         screenSetting = "Widescreen"
         print("screenSetting set to Widescreen") --Debug comment out after
-    elseif screenWidth == 1920 and screenHeight == 1080 then
+    else screenWidth == 1920 and screenHeight == 1080 then
         screenSetting = "HD"
         print("screenSetting set to HD") --Debug comment out after
     end
