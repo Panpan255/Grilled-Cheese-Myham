@@ -28,8 +28,6 @@ function  buttons.quit(x, y)
     end
 
 end
-<<<<<<< HEAD
-=======
 
 
 function buttons.windowSize(x, y, windowSize)
@@ -48,7 +46,6 @@ function buttons.windowSize(x, y, windowSize)
         resetGame()
     end
 
->>>>>>> size-grab
 
 function quitButton:draw(x, y)
     button_x = x
