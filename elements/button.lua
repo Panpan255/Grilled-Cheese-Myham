@@ -28,3 +28,6 @@ function  buttons.quit(x, y)
     end
 
 end
+
+
+functions buttons.windowSize(windowSize)
