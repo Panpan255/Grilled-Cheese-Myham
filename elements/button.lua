@@ -30,4 +30,8 @@ function  buttons.quit(x, y)
 end
 
 
-functions buttons.windowSize(windowSize)
+function buttons.windowSize(x, y, windowSize)
+    
+
+
+end
