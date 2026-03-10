@@ -4,6 +4,8 @@ local buttons = {}
 local items = {
     bread = {},
     cheese = {},
+    ham = {},
+    turkey = {},
 }
 
 function Button(text, func, func_param, width, height)
