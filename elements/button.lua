@@ -67,14 +67,17 @@ function buttons.itemBox(x, y)
     button_y = y
 
     local itemNumbers = {
-    bread = {},
-    cheese = {},
-    ham = {},
-    turkey = {},
+    bread = {1,11, 21, 22},
+    cheese = {2, 12},
+    ham = {3, 13},
+    turkey = {4, 14},
+    letus = {5, 15},
+    cucumber = {6, 16},
+    Mestry = {7, 17}
 }
 
     func = function()
-        local itemNumber = love.math.random(1, 100)
+        local itemNumber = love.math.random(1, 22)
 
 
     end
