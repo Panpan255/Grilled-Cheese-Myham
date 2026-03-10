@@ -45,7 +45,7 @@ function buttons.windowSize(x, y, windowSize)
         love.window.setMode(1920, 1080)
         resetGame()
     end
-
+end
 
 function quitButton:draw(x, y)
     button_x = x
