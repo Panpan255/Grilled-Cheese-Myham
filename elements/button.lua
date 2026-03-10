@@ -31,7 +31,8 @@ end
 
 
 function buttons.windowSize(x, y, windowSize)
-    
+    button_x = x
+    button_y = y
 
 
 end
