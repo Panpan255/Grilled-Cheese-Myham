@@ -1,7 +1,7 @@
 local love = require "love"
 local buttons = {}
 
-local items = {
+local itemNumbers = {
     bread = {},
     cheese = {},
     ham = {},
