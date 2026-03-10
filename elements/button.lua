@@ -36,8 +36,9 @@ function buttons.windowSize(x, y, windowSize)
 
     func = function(windowSize)
     if windowSize == "HD" then
-        love.window.setMode(width (1280), height (720))
+        love.window.setMode(1280, 720)
     elseif windowSize == "widescreen"
+        
     elseif windowSize == "Mini" 
     end
 
