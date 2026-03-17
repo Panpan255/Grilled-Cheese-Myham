@@ -1,5 +1,10 @@
+local screenSetting = "new"
+
+
 function screenSizeSet()
--- checking screen size 
+
+func =
+    -- checking screen size 
     screenWidth, screenHeight = love.graphics.getDimensions()
 
     -- Changing screen size setting 
