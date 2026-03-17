@@ -1,4 +1,5 @@
 splashy = require 'libs/splashy'
+screen = require 'screensetup'
 --settings = require 'menus/setting_menu'
 
 -- lists
