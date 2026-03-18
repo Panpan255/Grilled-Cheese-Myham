@@ -20,7 +20,7 @@ function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
-    
+    screen.screenSizeSet()
    
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
