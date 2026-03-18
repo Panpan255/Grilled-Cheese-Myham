@@ -4,10 +4,10 @@ local screenSetting = "new"
 
 function screenSizeSet()
 
-func = function
+func = function()
     -- checking screen size 
     screenWidth, screenHeight = love.graphics.getDimensions()
-
+    
     -- Changing screen size setting 
     if screenWidth == 800 and screenHeight == 500 then
         screenSetting = "Mini"
@@ -19,4 +19,17 @@ func = function
         screenSetting = "HD"
         print("screenSetting set to HD") --Debug comment out after
     end
+end
+
+function getScreenSize()
+    local ScreenSize = {
+
+    }
+
+    func = function()
+        table.insert(ScreenSize, screenSetting)
+    end
+
+    return ScreenSize
+
 end
