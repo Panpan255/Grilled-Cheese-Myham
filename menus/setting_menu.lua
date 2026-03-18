@@ -5,5 +5,11 @@ screenSetting = require "screensetup"
 
 function printSettingsMenu()
     
+    func = function()
+        local ScreenSize = screen.getScreenSize()
+
+        
+    end
+
     
 end
