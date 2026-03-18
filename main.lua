@@ -13,7 +13,7 @@ items = {
 -- screen settings varables
 local screenWidth
 local screenHeight
-local screenSetting -- can be set to Mini, Widescreen or HD
+
 
 
 function love.load()
@@ -21,7 +21,7 @@ function love.load()
     print("debug mode is on") --comment this out on realse
 
     screen.screenSizeSet()
-   
+    local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
