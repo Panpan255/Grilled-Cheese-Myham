@@ -81,8 +81,12 @@ function buttons.itemBox(x, y)
         if contains_value(itemNumbers.bread, itemNumber) then
 
         elseif contains_value(itemNumbers.cheese) then
+
         elseif contains_value(itemNumbers.ham) then
 
+        elseif contains_value(itemNumbers.turkey) then
+
+        elseif contains_value(itemNumbers.letus) then
 
     end
     
