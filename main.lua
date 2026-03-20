@@ -1,38 +1,27 @@
 splashy = require 'libs/splashy'
+screen = require 'screensetup'
 --settings = require 'menus/setting_menu'
 
+-- lists
+items = {
+    bread = {},
+    cheese = {},
+    turkey = {},
+    ham = {},
+}
 
 -- screen settings varables
 local screenWidth
 local screenHeight
-local screenSetting -- can be set to Mini, Widescreen or HD
+
 
 
 function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
-    -- checking screen size 
-    screenWidth, screenHeight = love.graphics.getDimensions()
-
-    -- Changing screen size setting 
-    if screenWidth == 800 and screenHeight == 500 then
-        screenSetting = "Mini"
-        print("screenSetting set to mini") --Debug comment out after
-<<<<<<< HEAD
-    elseif screenWidth == 1280 and screenHeight == 721 then
-        screenSetting = "Widescreen"
-=======
-    elseif screenWidth == 1280 and screenHeight == 720 then
-        screenSetting = "widescreen"
->>>>>>> size-grab
-        print("screenSetting set to Widescreen") --Debug comment out after
-    elseif screenWidth == 1920 and screenHeight == 1080 then
-        screenSetting = "HD"
-        print("screenSetting set to HD") --Debug comment out after
-    end
-    
-   
+    screen.screenSizeSet()
+    local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     

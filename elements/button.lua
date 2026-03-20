@@ -1,5 +1,7 @@
 local love = require "love"
 local buttons = {}
+main = require "main.lua"
+
 
 function Button(text, func, func_param, width, height)
     width = width or 100,
@@ -19,6 +21,26 @@ function Button(text, func, func_param, width, height)
     text_y = 0,
 end
 
+
+
+
+function buttons.windowSize(x, y, windowSize)
+    button_x = x
+    button_y = y
+
+    func = function(windowSize)
+        if windowSize == "HD" then
+            love.window.setMode(1280, 720)
+            resetGame()
+        elseif windowSize == "widescreen"
+            love.window.setMode(800, 500)
+            resetGame()
+        elseif windowSize == "Mini" 
+            love.window.setMode(1920, 1080)
+            resetGame()
+    end
+end
+
 function  buttons.quit(x, y)
     button_x = x
     button_y = y
@@ -28,33 +50,44 @@ function  buttons.quit(x, y)
     end
 
 end
-<<<<<<< HEAD
-=======
 
 
-function buttons.windowSize(x, y, windowSize)
+-- function quitButton:draw(x, y)
+--     button_x = x
+--     button_y = y
+--     image = love.graphics.newImage("images/buttons/Quit.png")
+
+
+--     love.graphics.draw(image, x, y)
+-- end
+
+
+function buttons.itemBox(x, y)
     button_x = x
     button_y = y
 
-    func = function(windowSize)
-    if windowSize == "HD" then
-        love.window.setMode(1280, 720)
-        resetGame()
-    elseif windowSize == "widescreen"
-        love.window.setMode(800, 500)
-        resetGame()
-    elseif windowSize == "Mini" 
-        love.window.setMode(1920, 1080)
-        resetGame()
+    local itemNumbers = {
+    bread = {1,11, 21, 22},
+    cheese = {2, 12},
+    ham = {3, 13},
+    turkey = {4, 14},
+    letus = {5, 15},
+    cucumber = {6, 16},
+    Mestry = {7, 17}
+}
+
+    func = function()
+        local itemNumber = love.math.random(1, 22)
+        if contains_value(itemNumbers.bread, itemNumber) then
+
+        elseif contains_value(itemNumbers.cheese) then
+
+        elseif contains_value(itemNumbers.ham) then
+
+        elseif contains_value(itemNumbers.turkey) then
+
+        elseif contains_value(itemNumbers.letus) then
+
     end
-
->>>>>>> size-grab
-
-function quitButton:draw(x, y)
-    button_x = x
-    button_y = y
-    image = love.graphics.newImage("images/buttons/Quit.png")
-
-
-    love.graphics.draw(image, x, y)
+    
 end
