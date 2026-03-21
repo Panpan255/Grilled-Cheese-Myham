@@ -65,4 +65,7 @@ function love.update(dt)
         if screenSetting == "mini" then
         elseif screenSetting == "HD" then
         elseif screenSetting == "widescreen"then 
-    elseif
+    elseif menuSetting == "Settings" then
+        if screenSetting == "mini" then
+        elseif screenSetting == "HD" then
+        elseif screenSetting == "widescreen"then 
