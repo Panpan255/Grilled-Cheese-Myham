@@ -95,5 +95,7 @@ end
 function buttons.homeMenu(x,y)
 
     func = function()
+
+    love.update(dt)
     end
 end
