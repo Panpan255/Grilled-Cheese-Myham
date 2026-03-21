@@ -10,6 +10,10 @@ items = {
     ham = {},
 }
 
+--what screen
+local menuSetting = ""
+
+
 -- screen settings varables
 local screenWidth
 local screenHeight
