@@ -93,4 +93,7 @@ function buttons.itemBox(x, y)
 end
 
 function buttons.homeMenu(x,y)
+
+    func = function()
+    end
 end
