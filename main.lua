@@ -11,7 +11,7 @@ items = {
 }
 
 --what screen
-local menuSetting = ""
+local menuSetting = "main"
 
 
 -- screen settings varables
@@ -65,7 +65,7 @@ function love.update(dt)
         if screenSetting == "mini" then
         elseif screenSetting == "HD" then
         elseif screenSetting == "widescreen"then 
-            
+
     elseif menuSetting == "settings" then
         if screenSetting == "mini" then
         elseif screenSetting == "HD" then
