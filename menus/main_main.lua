@@ -4,3 +4,6 @@ local mainMenu = {}
 
 function mainMenu.print.HD()
 end
+
+function mainMenu.print.mini()
+end
