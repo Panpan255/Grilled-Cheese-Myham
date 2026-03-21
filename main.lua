@@ -60,3 +60,9 @@ function love.draw()
     love.graphics.print("hello world", 500, 300)
 end
 
+function love.update(dt)
+    if menuSetting == "main" then
+        if screenSetting == "mini" then
+        elseif screenSetting == "HD" then
+        elseif screenSetting == "widescreen"then 
+    elseif
