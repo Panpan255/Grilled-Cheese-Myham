@@ -24,7 +24,7 @@ end
 
 
 
-function buttons.windowSize(x, y, windowSize)
+function buttons.windowSize(x, y)
     button_x = x
     button_y = y
 
