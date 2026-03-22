@@ -64,9 +64,11 @@ end
 function love.update(dt)
     if menuSetting == "main" then
         if screenSetting == "mini" then
+            mainMenu.print.mini()
         elseif screenSetting == "HD" then
+            mainMenu.print.HD()
         elseif screenSetting == "widescreen"then 
-
+            mainMenu.print.widescreen
     elseif menuSetting == "settings" then
         if screenSetting == "mini" then
         elseif screenSetting == "HD" then
