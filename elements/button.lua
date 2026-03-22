@@ -41,15 +41,6 @@ function buttons.windowSize(x, y)
     end
 end
 
-function  buttons.quit(x, y)
-    button_x = x
-    button_y = y
-
-    func = function()
-        love.quit()
-    end
-
-end
 
 
 -- function quitButton:draw(x, y)
@@ -91,6 +82,20 @@ function buttons.itemBox(x, y)
     end
     
 end
+
+
+--Menu/system buttons
+
+function  buttons.quit(x, y)
+    button_x = x
+    button_y = y
+
+    func = function()
+        love.quit()
+    end
+
+end
+
 
 function buttons.homeMenu(x,y)
 
