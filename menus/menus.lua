@@ -48,3 +48,6 @@ end
 
 
 -- Pause Menu
+
+local pauseMenu = {}
+
