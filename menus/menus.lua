@@ -16,6 +16,10 @@ end
 
 -- Widescreen Size window
 
+function mainMenu.print.widescreen()
+    love.graphics.setBackgroundColor(106, 230, 157, 1.0))
+end
+
 
 
 
