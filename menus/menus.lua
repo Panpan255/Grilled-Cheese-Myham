@@ -45,3 +45,6 @@ function settingMenu.print.widescreen()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
    
 end
+
+
+-- Pause Menu
