@@ -51,3 +51,5 @@ end
 
 local pauseMenu = {}
 
+function pauseMenu.print.HD()
+end
