@@ -12,5 +12,9 @@ doc server not in full effect but better to have it now then later anyways have 
 ## Moding 
 if your wanting to mod the game there is a file for that called Moder.MD it is a mark down file like this that explanes the process of modding the game with my code that well is border line readable 
 
+## Warnning
+So this game is not finished at all Because I'm not good with focus or time usage and I got school at the same time so yeah I'm still going to show my idea and the code I got at the end but it might just be the functions I had been working on for the core parts of the game might not even be a game.
+
+
 ## Last info
 and The last thing I use Arch btw
