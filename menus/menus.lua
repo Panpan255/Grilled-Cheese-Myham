@@ -6,7 +6,7 @@ buttons = require 'elements/button'
 
 -- Main Menu
 
-local = mainMenu{}
+local mainMenu = {}
 
 -- Mini size window
 
