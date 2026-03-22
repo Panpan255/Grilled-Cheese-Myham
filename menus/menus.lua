@@ -53,3 +53,6 @@ local pauseMenu = {}
 
 function pauseMenu.print.HD()
 end
+
+function pauseMenu.print.mini()
+end
