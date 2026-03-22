@@ -98,11 +98,14 @@ function buttons.homeMenu(x,y)
     main.menuSetting = "main"
     love.update(dt)
     end
+
 end
 
 function buttons.settingsMenu(x, y)
+    
     func = function()
     main.menuSetting = "settings"
     love.update(dt)
     end
+
 end
