@@ -80,4 +80,4 @@ function love.update(dt)
     
     elseif menuSetting == "pause" then
         if screenSetting == "mini" then
-            pauseMenu.print.mini
+            pauseMenu.print.mini()
