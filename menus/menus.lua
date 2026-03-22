@@ -10,6 +10,10 @@ local = mainMenu{}
 
 -- Mini size window
 
+function mainMenu.print.mini()
+    love.graphics.setBackgroundColor(106, 230, 157, 1.0))
+end
+
 
 
 
