@@ -92,3 +92,6 @@ function love.update(dt)
         elseif screenSetting == "HD" then
             pauseMenu.print.HD()
 
+        elseif screenSetting == "widescreen" then
+            pauseMenu.print.widescreeen()
+
