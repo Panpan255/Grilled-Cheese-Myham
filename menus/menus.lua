@@ -6,7 +6,7 @@ buttons = require 'elements/button'
 
 -- Main Menu
 
-local mainMenu = {}
+local mainMenu.print = {}
 
 -- Mini size window
 
@@ -30,7 +30,7 @@ end
 
 -- Settings Menu
 
-local settingsMenu = {}
+local settingsMenu.print = {}
 
 function settingMenu.print.HD()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
