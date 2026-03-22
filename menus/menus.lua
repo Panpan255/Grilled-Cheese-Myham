@@ -57,5 +57,5 @@ end
 function pauseMenu.print.mini()
 end
 
-fucntion pauseMenu.print.widescren()
+function pauseMenu.print.widescren()
 end
