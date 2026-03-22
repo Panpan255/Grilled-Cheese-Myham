@@ -99,3 +99,10 @@ function buttons.homeMenu(x,y)
     love.update(dt)
     end
 end
+
+function buttons.settingsMenu(x, y)
+    func = function()
+    main.menuSetting = "settings"
+    love.update(dt)
+    end
+end
