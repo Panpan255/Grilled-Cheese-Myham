@@ -6,7 +6,9 @@ local buttons = require '/libs/elements/button'
 
 -- Main Menu
 
-local mainMenu = {}
+local mainMenu = {
+    print = {}
+}
 
 -- Mini size window
 
