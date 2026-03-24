@@ -18,13 +18,13 @@ end
 -- Widescreen Size window
 
 function mainMenu.print.widescreen()
-    love.graphics.setBackgroundColor(106, 230, 157, 1.0))
+    love.graphics.setBackgroundColor(106, 230, 157, 1.0)
 end
 
 -- HD size Window
 
 function mainMenu.print.HD()
-    love.graphics.setBackgroundColor(106, 230, 157, 1.0))
+    love.graphics.setBackgroundColor(106, 230, 157, 1.0)
 end
 
 
