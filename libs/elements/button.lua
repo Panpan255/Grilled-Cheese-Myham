@@ -1,6 +1,6 @@
 local love = require "love"
 local buttons = {}
-main = require "main.lua"
+main = require "main"
 
 
 --function Button(text, func, func_param, width, height)
