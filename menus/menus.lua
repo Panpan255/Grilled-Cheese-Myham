@@ -1,6 +1,6 @@
 -- imports
 local love = require 'love'
-buttons = require 'elements/button'
+buttons = require '../elements/button'
 
 
 
@@ -12,7 +12,7 @@ local mainMenu.print = {}
 
 function mainMenu.print.mini()
     love.graphics.setBackgroundColor(106, 230, 157, 1.0))
-    
+
 end
 
 -- Widescreen Size window
