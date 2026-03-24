@@ -71,7 +71,7 @@ function love.update(dt)
             mainMenu.print.HD()
         
         elseif screenSetting == "widescreen"then 
-            mainMenu.print.widescreen
+            mainMenu.print.widescreen()
         
 
     elseif menuSetting == "settings" then
@@ -90,7 +90,7 @@ function love.update(dt)
         
         if screenSetting == "mini" then
             pauseMenu.print.mini()
-        
+
         elseif screenSetting == "HD" then
             pauseMenu.print.HD()
 
