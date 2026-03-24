@@ -2,7 +2,7 @@ splashy = require 'libs/splashy'
 screen = require 'screensetup'
 --settings = require 'menus/setting_menu'
 --mainMenu = require 'menus/main_menu'
-menus = require 'libs/menus.lua'
+menus = require 'libs/menus'
 
 
 -- lists
