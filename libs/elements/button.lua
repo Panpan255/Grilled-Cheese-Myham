@@ -38,6 +38,7 @@ function buttons.windowSize(x, y)
         elseif windowSize == "Mini" then
             love.window.setMode(1920, 1080)
             resetGame()
+        end
     end
 end
 
@@ -69,7 +70,7 @@ function buttons.itemBox(x, y)
 
     func = function()
         local itemNumber = love.math.random(1, 22)
-        
+
         if contains_value(itemNumbers.bread, itemNumber) then
 
         elseif contains_value(itemNumbers.cheese) then
