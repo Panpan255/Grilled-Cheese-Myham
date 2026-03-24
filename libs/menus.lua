@@ -31,7 +31,7 @@ end
 
 -- Settings Menu
 
-local settingsMenu.print = {}
+local settingsMenu = {}
 
 function settingMenu.print.HD()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
