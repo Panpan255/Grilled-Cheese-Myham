@@ -39,4 +39,7 @@ One thing that you might want in your mod is even more items well you can add th
 while moding I suggest that you test your new code to make sure it works and that it works with all the screen sizes the reason why is because while I was coding I got splash screen problems with 720p due to the fact that love2d was changing 720 to 721 no mater what so I needed to adapt my code to that function in the love2D code.
 
 
+## soooo
+At this point modding is just finishing the game off ok bye.
+
 
