@@ -1,5 +1,5 @@
 splashy = require 'libs/splashy'
-local screen = require 'screensetup'
+local screen = require 'libs/screensetup'
 --settings = require 'menus/setting_menu'
 --mainMenu = require 'menus/main_menu'
 menus = require 'libs/menus'
