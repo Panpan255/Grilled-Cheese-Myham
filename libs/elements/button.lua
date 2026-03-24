@@ -1,6 +1,6 @@
 local love = require "love"
 local buttons = {}
-main = require "main"
+local main = require "main"
 
 
 --function Button(text, func, func_param, width, height)
