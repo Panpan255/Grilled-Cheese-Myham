@@ -1,5 +1,5 @@
-buttons = require "../elements/button.lua"
-local love = require "love"
+buttons = require '../elements/button.lua'
+local love = require 'love'
 
 local settingMenu = {}
 
