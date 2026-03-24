@@ -1,7 +1,7 @@
 -- imports
 local love = require 'love'
-local buttons = require 'elements/button'
-
+--local buttons = require 'elements/button'
+buttons = import('./elements/button')
 
 
 -- Main Menu
