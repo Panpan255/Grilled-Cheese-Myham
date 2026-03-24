@@ -1,5 +1,5 @@
 splashy = require 'libs/splashy'
-screen = require 'libs/screensetup'
+screen = require 'libs/screen/screensetup'
 --settings = require 'menus/setting_menu'
 --mainMenu = require 'menus/main_menu'
 menus = require 'libs/menus'
@@ -27,7 +27,7 @@ function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
-    screen.screenSizeSet()
+    screen.screenSettings.screenSizeSet()
     local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
