@@ -33,7 +33,7 @@ end
 
 -- Settings Menu
 
-settingsMenu = {
+local settingsMenu = {
     print = {}
 }
 
