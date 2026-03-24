@@ -84,6 +84,7 @@ function love.update(dt)
         
         elseif screenSetting == "widescreen"then 
             settingMenu.print.widescreen()
+        end
         
 
     elseif menuSetting == "pause" then
@@ -96,5 +97,8 @@ function love.update(dt)
 
         elseif screenSetting == "widescreen" then
             pauseMenu.print.widescreeen()
+        end
+    end
+end
         
 
