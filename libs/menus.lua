@@ -37,16 +37,16 @@ local settingsMenu = {
     print = {}
 }
 
-function settingMenu.print.HD()
+function settingsMenu.print.HD()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
 end
 
-function settingMenu.print.mini()
+function settingsMenu.print.mini()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
     
 end
 
-function settingMenu.print.widescreen()
+function settingsMenu.print.widescreen()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
    
 end
