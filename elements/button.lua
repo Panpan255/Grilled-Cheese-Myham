@@ -87,8 +87,8 @@ end
 --Menu/system buttons
 
 function  buttons.quit(x, y)
-    button_x = x
-    button_y = y
+    self.x = x
+    self.y = y
 
     func = function()
         love.quit()
