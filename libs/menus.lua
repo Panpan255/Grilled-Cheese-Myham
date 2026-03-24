@@ -54,7 +54,9 @@ end
 
 -- Pause Menu
 
-local pauseMenu = {}
+local pauseMenu = {
+    print = {}
+}
 
 function pauseMenu.print.HD()
 end
