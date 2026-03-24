@@ -18,6 +18,7 @@ function screenSizeSet()
             screenSetting = "HD"
             print("screenSetting set to HD") --Debug comment out after
         end
+    end
 end
 
 function getScreenSize()
