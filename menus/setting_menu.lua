@@ -1,6 +1,6 @@
 --local buttons = require '../elements/button.lua'
 local buttons = import('../elements/button.lua')
---local love = require 'love'
+local love = require 'love'
 
 local settingMenu = {}
 
