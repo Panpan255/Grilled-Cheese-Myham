@@ -54,8 +54,8 @@ end
 
 
 function buttons.itemBox(x, y)
-    button_x = x
-    button_y = y
+    self.x = x
+    self.y = y
 
     local itemNumbers = {
     bread = {1,11, 21, 22},
@@ -65,10 +65,11 @@ function buttons.itemBox(x, y)
     letus = {5, 15},
     cucumber = {6, 16},
     Mestry = {7, 17}
-}
+    }
 
     func = function()
         local itemNumber = love.math.random(1, 22)
+        
         if contains_value(itemNumbers.bread, itemNumber) then
 
         elseif contains_value(itemNumbers.cheese) then
@@ -78,6 +79,7 @@ function buttons.itemBox(x, y)
         elseif contains_value(itemNumbers.turkey) then
 
         elseif contains_value(itemNumbers.letus) then
+        end
 
     end
     
