@@ -27,6 +27,7 @@ function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
+    local screen = require 'libs/screen/screensetup'
     screen.screenSettings.screenSizeSet()
     local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
