@@ -63,42 +63,44 @@ function love.draw()
     love.graphics.print("hello world", 500, 300)
 end
 
-function love.update(dt)
-    if menuSetting == "main" then
-        
-        if screenSetting == "mini" then
-            mainMenu.print.mini()
-        
-        elseif screenSetting == "HD" then
-            mainMenu.print.HD()
-        
-        elseif screenSetting == "widescreen"then 
-            mainMenu.print.widescreen()
-        
-        end
-    elseif menuSetting == "settings" then
-        
-        if screenSetting == "mini" then
-            settingMenu.print.Mini()
-        
-        elseif screenSetting == "HD" then
-            settingMenu.print.HD()
-        
-        elseif screenSetting == "widescreen"then 
-            settingMenu.print.widescreen()
-        end
-        
+game = {}
 
-    elseif menuSetting == "pause" then
+function game.update(dt)
+    func = function()
+        if menuSetting == "main" then
+            if screenSetting == "mini" then
+                mainMenu.print.mini()
         
-        if screenSetting == "mini" then
-            pauseMenu.print.mini()
+            elseif screenSetting == "HD" then
+                mainMenu.print.HD()
+        
+            elseif screenSetting == "widescreen"then 
+                mainMenu.print.widescreen()
+        
+            end
+        
+        elseif menuSetting == "settings" then
+        
+            if screenSetting == "mini" then
+                settingMenu.print.Mini()
+        
+            elseif screenSetting == "HD" then
+                settingMenu.print.HD()
+        
+            elseif screenSetting == "widescreen"then 
+                settingMenu.print.widescreen()
+            end
+        
+        elseif menuSetting == "pause" then
+            if screenSetting == "mini" then
+                pauseMenu.print.mini()
 
-        elseif screenSetting == "HD" then
-            pauseMenu.print.HD()
+            elseif screenSetting == "HD" then
+                pauseMenu.print.HD()
 
-        elseif screenSetting == "widescreen" then
-            pauseMenu.print.widescreeen()
+            elseif screenSetting == "widescreen" then
+                pauseMenu.print.widescreeen()
+            end
         end
     end
 end
