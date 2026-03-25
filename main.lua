@@ -27,7 +27,7 @@ function love.load()
      --printing for debug mode
     print("debug mode is on") --comment this out on realse
 
-    screen.screenSettings.screenSizeSet()
+    screen.screenSizeSet()
     local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
