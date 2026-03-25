@@ -1,5 +1,5 @@
-local love = require "love"
-local main = require "main"
+local love = require 'love'
+local main = require 'main'
 local buttons = {}
 --local main = require "main"
 
