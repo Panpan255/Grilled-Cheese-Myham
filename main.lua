@@ -69,13 +69,13 @@ function game.update(dt)
     func = function()
         if menuSetting == "main" then
             if screenSetting == "mini" then
-                mainMenu.print.mini()
+                menus.mainMenu.print.mini()
         
             elseif screenSetting == "HD" then
-                mainMenu.print.HD()
+                menus.mainMenu.print.HD()
         
             elseif screenSetting == "widescreen"then 
-                mainMenu.print.widescreen()
+                menus.mainMenu.print.widescreen()
         
             end
         
