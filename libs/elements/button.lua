@@ -105,7 +105,7 @@ function buttons.homeMenu(x,y)
 
     func = function()
     main.menuSetting = "main"
-    love.update(dt)
+    main.game.update(dt)
     end
 
 end
@@ -114,7 +114,7 @@ function buttons.settingsMenu(x, y)
     
     func = function()
     main.menuSetting = "settings"
-    love.update(dt)
+    main.game.update(dt)
     end
 
 end
