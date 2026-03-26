@@ -14,12 +14,12 @@ items = {
 }
 
 --what screen
-local menuSetting = "main"
+menuSetting = "main"
 
 
 -- screen settings varables
-local screenWidth
-local screenHeight
+screenWidth = 0
+screenHeight = 0
 
 
 
