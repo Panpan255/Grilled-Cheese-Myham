@@ -47,6 +47,14 @@ function love.load()
         print("slpash screen for HD is setup") -- comment out later this is for debug
     end
     
+    -- import images
+    BoxScreen_HD = love.graphics.newImage("images/HD/Box-Screen.png")
+
+
+
+
+
+
 
 
     --love.window.setMode(800,500) -- this sets the screen size to 800 by 500
