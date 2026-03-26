@@ -28,7 +28,7 @@ function love.load()
     print("debug mode is on") --comment this out on realse
 
     screen.screenSizeSet()
-    local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
+    screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
@@ -48,9 +48,9 @@ function love.load()
     end
     
     -- import images
-    BoxScreen_HD = love.graphics.newImage("images/HD/Box-Screen.png")
-    BoxScreen_mini = love.graphics.newImage("images/Mini/Box-Screen.png")
-    BoxScreen_widescreen = love.graphics.newImage("images/widescreen/Box-Screen.png")
+    --BoxScreen_HD = love.graphics.newImage("images/HD/Box-Screen.png")
+    --BoxScreen_mini = love.graphics.newImage("images/Mini/Box-Screen.png")
+    --BoxScreen_widescreen = love.graphics.newImage("images/widescreen/Box-Screen.png")
 
 
 
