@@ -75,10 +75,13 @@ local boxScreen = {
 }
 
 function boxScreen.print.HD()
+    --love.graphics.draw(BoxScreen_HD 0, 0)
 end
 
 function boxScreen.print.mini()
+    --love.graphics.draw(BoxScreen_mini 0, 0)
 end
 
-function boxScreen.print.Widescreen()
+function boxScreen.print.widescreen()
+    --love.graphics.draw(BoxScreen_widescreen 0, 0)
 end
