@@ -1,6 +1,6 @@
 -- imports
 local love = require 'love'
-local buttons = require '/libs/elements/button'
+local buttons = require '/libs/button'
 
 
 
