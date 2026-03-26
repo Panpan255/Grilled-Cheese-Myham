@@ -106,17 +106,3 @@ function game.update(dt)
 end
         
 
---- box screen
-
-local boxScreen = {
-    print = {}
-}
-
-function boxScreen.print.HD()
-end
-
-function boxScreen.print.mini()
-end
-
-function boxScreen.print.Widescreen()
-end
