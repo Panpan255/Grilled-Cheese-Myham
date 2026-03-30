@@ -43,20 +43,34 @@ local settingsMenu = {
 }
 
 function settingsMenu.print.HD()
+    -- Background
+
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
+
+    -- Home button
+    
     --love.graphics.draw(mainMenuButton 100, 700)
     buttons.homeMenu(100,700)
 end
 
 function settingsMenu.print.mini()
+    -- bacground
+
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
+
+    --back button
+
     --love.graphics.draw(mainMenuButton 100, 700)
     buttons.homeMenu(100, 700)
     
 end
 
 function settingsMenu.print.widescreen()
+    --background 
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
+
+    -- back button
+
     --love.graphics.draw(mainMenuButton 100, 700)
     buttons.homeMenu(100, 700)
    
