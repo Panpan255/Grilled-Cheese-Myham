@@ -1,6 +1,7 @@
-local love = require "love"
+local love = require 'love'
+local main = require '../../main'
 local buttons = {}
-main = require "main.lua"
+--local main = require "main"
 
 
 --function Button(text, func, func_param, width, height)
@@ -32,12 +33,13 @@ function buttons.windowSize(x, y)
         if windowSize == "HD" then
             love.window.setMode(1280, 720)
             resetGame()
-        elseif windowSize == "widescreen"
+        elseif windowSize == "widescreen" then
             love.window.setMode(800, 500)
             resetGame()
-        elseif windowSize == "Mini" 
+        elseif windowSize == "Mini" then
             love.window.setMode(1920, 1080)
             resetGame()
+        end
     end
 end
 
@@ -54,8 +56,10 @@ end
 
 
 function buttons.itemBox(x, y)
-    button_x = x
-    button_y = y
+    self.x = x
+    self.y = y
+
+    -- list of what numbers count for what item
 
     local itemNumbers = {
     bread = {1,11, 21, 22},
@@ -65,19 +69,27 @@ function buttons.itemBox(x, y)
     letus = {5, 15},
     cucumber = {6, 16},
     Mestry = {7, 17}
-}
+    }
 
     func = function()
+        -- Pick a number 
+        
         local itemNumber = love.math.random(1, 22)
+
+
+        -- check what item and add it to the players inventory 
+
         if contains_value(itemNumbers.bread, itemNumber) then
-
+            inventory.bread = inventory.bread + 1
         elseif contains_value(itemNumbers.cheese) then
-
+            inventory.cheese = inventory.cheese + 1
         elseif contains_value(itemNumbers.ham) then
-
+            inventory.ham = inventory.ham + 1
         elseif contains_value(itemNumbers.turkey) then
-
+            inventory.turkey = inventory.turkey + 1
         elseif contains_value(itemNumbers.letus) then
+            inventory.letus = inventory.letus + 1
+        end
 
     end
     
@@ -98,19 +110,23 @@ end
 
 
 function buttons.homeMenu(x,y)
+    self.x = x
+    self.y = y
 
     func = function()
-    main.menuSetting = "main"
-    love.update(dt)
+        main.menuSetting = "main"
+        main.game.update(dt)
     end
 
 end
 
 function buttons.settingsMenu(x, y)
-    
+    self.x = x
+    self.y = y 
+
     func = function()
-    main.menuSetting = "settings"
-    love.update(dt)
+        main.menuSetting = "settings"
+        main.game.update(dt)
     end
 
 end

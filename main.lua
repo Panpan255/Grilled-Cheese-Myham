@@ -1,23 +1,25 @@
 splashy = require 'libs/splashy'
-screen = require 'screensetup'
-settings = require 'menus/setting_menu'
-mainMenu = require 'menus/main_menu'
+screen = require('\libs\screen')
+--settings = require 'menus/setting_menu'
+--mainMenu = require 'menus/main_menu'
+menus = require 'libs/menus'
+
 
 -- lists
-items = {
-    bread = {},
-    cheese = {},
-    turkey = {},
-    ham = {},
+inventory = {
+    bread = 0,
+    cheese = 0,
+    turkey = 0,
+    ham = 0,
 }
 
 --what screen
-local menuSetting = "main"
+menuSetting = "main"
 
 
 -- screen settings varables
-local screenWidth
-local screenHeight
+screenWidth = 0
+screenHeight = 0
 
 
 
@@ -26,7 +28,7 @@ function love.load()
     print("debug mode is on") --comment this out on realse
 
     screen.screenSizeSet()
-    local screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
+    screenSetting = screen.getScreenSize() -- can be set to Mini, Widescreen or HD
     
     -- print ("screen size", screenWidth, screenHeight) -- comment out this is debug
     
@@ -45,6 +47,23 @@ function love.load()
         print("slpash screen for HD is setup") -- comment out later this is for debug
     end
     
+    -- import images
+    
+    --Box images
+
+    --BoxScreen_HD = love.graphics.newImage("images/HD/Box-Screen.png")
+    --BoxScreen_mini = love.graphics.newImage("images/Mini/Box-Screen.png")
+    --BoxScreen_widescreen = love.graphics.newImage("images/widescreen/Box-Screen.png")
+
+    --button images
+    quitButton = love.graphics.newImage("images/buttons/Quit.png")
+    --mainMenuButton = love.graphics.newImage(images/buttons/MainMenu.png)
+
+
+
+
+
+
 
 
     --love.window.setMode(800,500) -- this sets the screen size to 800 by 500
@@ -58,45 +77,47 @@ end
 
 function love.draw()
     splashy.draw()
-    love.graphics.print("hello world", 500, 300)
+    --love.graphics.print("hello world", 500, 300) -- This was a test
 end
 
-function love.update(dt)
-    if menuSetting == "main" then
-        
-        if screenSetting == "mini" then
-            mainMenu.print.mini()
-        
-        elseif screenSetting == "HD" then
-            mainMenu.print.HD()
-        
-        elseif screenSetting == "widescreen"then 
-            mainMenu.print.widescreen()
-        
-        end
-    elseif menuSetting == "settings" then
-        
-        if screenSetting == "mini" then
-            settingMenu.print.Mini()
-        
-        elseif screenSetting == "HD" then
-            settingMenu.print.HD()
-        
-        elseif screenSetting == "widescreen"then 
-            settingMenu.print.widescreen()
-        end
-        
+game = {}
 
-    elseif menuSetting == "pause" then
+function game.update(dt)
+    func = function()
+        if menuSetting == "main" then
+            if screenSetting == "mini" then
+                menus.mainMenu.print.mini()
         
-        if screenSetting == "mini" then
-            pauseMenu.print.mini()
+            elseif screenSetting == "HD" then
+                menus.mainMenu.print.HD()
+        
+            elseif screenSetting == "widescreen"then 
+                menus.mainMenu.print.widescreen()
+        
+            end
+        
+        elseif menuSetting == "settings" then
+        
+            if screenSetting == "mini" then
+                settingMenu.print.Mini()
+        
+            elseif screenSetting == "HD" then
+                settingMenu.print.HD()
+        
+            elseif screenSetting == "widescreen"then 
+                settingMenu.print.widescreen()
+            end
+        
+        elseif menuSetting == "pause" then
+            if screenSetting == "mini" then
+                pauseMenu.print.mini()
 
-        elseif screenSetting == "HD" then
-            pauseMenu.print.HD()
+            elseif screenSetting == "HD" then
+                pauseMenu.print.HD()
 
-        elseif screenSetting == "widescreen" then
-            pauseMenu.print.widescreeen()
+            elseif screenSetting == "widescreen" then
+                pauseMenu.print.widescreeen()
+            end
         end
     end
 end

@@ -1,7 +1,6 @@
 local screenSetting = "new"
 
 
-
 function screenSizeSet()
     func = function()
     -- checking screen size 
