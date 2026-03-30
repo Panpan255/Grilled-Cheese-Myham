@@ -103,9 +103,11 @@ end
 
 function buttons.homeMenu(x,y)
 
+
+
     func = function()
-    main.menuSetting = "main"
-    main.game.update(dt)
+        main.menuSetting = "main"
+        main.game.update(dt)
     end
 
 end
