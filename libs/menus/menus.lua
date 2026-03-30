@@ -13,7 +13,12 @@ local mainMenu = {
 -- Mini size window
 
 function mainMenu.print.mini()
+    --background 
+
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
+
+    --Quit button
+
     love.graphics.draw(quitButton 100, 500)
     buttons.quit(100, 500)
 end
@@ -21,7 +26,12 @@ end
 -- Widescreen Size window
 
 function mainMenu.print.widescreen()
+    --Background
+
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
+
+    -- Quit button
+
     love.graphics.draw(quitButton 100, 500)
     buttons.quit(100, 500)
 end
@@ -29,7 +39,12 @@ end
 -- HD size Window
 
 function mainMenu.print.HD()
+    --Background
+
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
+
+    --Quit button
+
     love.graphics.draw(quitButton 100, 500)
     buttons.quit(100, 500)
 end
@@ -48,7 +63,7 @@ function settingsMenu.print.HD()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
 
     -- Home button
-    
+
     --love.graphics.draw(mainMenuButton 100, 700)
     buttons.homeMenu(100,700)
 end
@@ -100,13 +115,22 @@ local boxScreen = {
 }
 
 function boxScreen.print.HD()
+
+    -- The box
+    
     --love.graphics.draw(BoxScreen_HD 0, 0)
 end
 
 function boxScreen.print.mini()
+
+    --The box
+
     --love.graphics.draw(BoxScreen_mini 0, 0)
 end
 
 function boxScreen.print.widescreen()
+
+    --The box
+
     --love.graphics.draw(BoxScreen_widescreen 0, 0)
 end
