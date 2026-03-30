@@ -102,8 +102,8 @@ end
 
 
 function buttons.homeMenu(x,y)
-
-
+    self.x = x
+    self.y = y
 
     func = function()
         main.menuSetting = "main"
