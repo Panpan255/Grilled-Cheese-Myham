@@ -77,11 +77,11 @@ function buttons.itemBox(x, y)
         elseif contains_value(itemNumbers.cheese) then
             inventory.cheese = inventory.cheese + 1
         elseif contains_value(itemNumbers.ham) then
-
-
+            inventory.ham = inventory.ham + 1
         elseif contains_value(itemNumbers.turkey) then
-
+            inventory.turkey = inventory.turkey + 1
         elseif contains_value(itemNumbers.letus) then
+            inventory.letus = inventory.letus + 1
         end
 
     end
