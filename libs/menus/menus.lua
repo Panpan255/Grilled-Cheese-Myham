@@ -56,6 +56,7 @@ end
 function settingsMenu.print.widescreen()
     love.graphics.setBackgroundColor(109, 176, 165, 1.0)
     --love.graphics.draw(mainMenuButton 100, 700)
+    buttons.homeMenu(100, 700)
    
 end
 
