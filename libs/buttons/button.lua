@@ -73,10 +73,11 @@ function buttons.itemBox(x, y)
         local itemNumber = love.math.random(1, 22)
 
         if contains_value(itemNumbers.bread, itemNumber) then
-
+            inventory.bread = inventory.bread + 1
         elseif contains_value(itemNumbers.cheese) then
-
+            inventory.cheese = inventory.cheese + 1
         elseif contains_value(itemNumbers.ham) then
+
 
         elseif contains_value(itemNumbers.turkey) then
 
