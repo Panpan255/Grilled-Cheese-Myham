@@ -6,7 +6,7 @@ menus = require 'libs/menus'
 
 
 -- lists
-items = {
+inventory = {
     bread = {},
     cheese = {},
     turkey = {},
