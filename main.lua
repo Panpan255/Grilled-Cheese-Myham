@@ -48,10 +48,16 @@ function love.load()
     end
     
     -- import images
+    
+    --Box images
+
     --BoxScreen_HD = love.graphics.newImage("images/HD/Box-Screen.png")
     --BoxScreen_mini = love.graphics.newImage("images/Mini/Box-Screen.png")
     --BoxScreen_widescreen = love.graphics.newImage("images/widescreen/Box-Screen.png")
+
+    --button images
     quitButton = love.graphics.newImage("images/buttons/Quit.png")
+    --mainMenuButton = love.graphics.newImage(images/buttons/MainMenu.png)
 
 
 
