@@ -1,5 +1,5 @@
 splashy = require 'libs/splashy'
-screen = require 'libs/screen'
+screen = require('\libs\screen')
 --settings = require 'menus/setting_menu'
 --mainMenu = require 'menus/main_menu'
 menus = require 'libs/menus'
@@ -71,7 +71,7 @@ end
 
 function love.draw()
     splashy.draw()
-    love.graphics.print("hello world", 500, 300)
+    --love.graphics.print("hello world", 500, 300) -- This was a test
 end
 
 game = {}
