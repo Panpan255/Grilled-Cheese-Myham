@@ -7,10 +7,10 @@ menus = require 'libs/menus'
 
 -- lists
 inventory = {
-    bread = {},
-    cheese = {},
-    turkey = {},
-    ham = {},
+    bread = 0,
+    cheese = 0,
+    turkey = 0,
+    ham = 0,
 }
 
 --what screen
