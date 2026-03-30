@@ -59,6 +59,8 @@ function buttons.itemBox(x, y)
     self.x = x
     self.y = y
 
+    -- list of what numbers count for what item
+
     local itemNumbers = {
     bread = {1,11, 21, 22},
     cheese = {2, 12},
@@ -70,7 +72,12 @@ function buttons.itemBox(x, y)
     }
 
     func = function()
+        -- Pick a number 
+        
         local itemNumber = love.math.random(1, 22)
+
+
+        -- check what item and add it to the players inventory 
 
         if contains_value(itemNumbers.bread, itemNumber) then
             inventory.bread = inventory.bread + 1
