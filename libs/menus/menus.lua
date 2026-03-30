@@ -15,7 +15,7 @@ local mainMenu = {
 function mainMenu.print.mini()
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
     love.graphics.draw(quitButton 100, 500)
-
+    buttons.quit(100, 500)
 end
 
 -- Widescreen Size window
@@ -23,6 +23,7 @@ end
 function mainMenu.print.widescreen()
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
     love.graphics.draw(quitButton 100, 500)
+    buttons.quit(100, 500)
 end
 
 -- HD size Window
@@ -30,6 +31,7 @@ end
 function mainMenu.print.HD()
     love.graphics.setBackgroundColor(106, 230, 157, 1.0)
     love.graphics.draw(quitButton 100, 500)
+    buttons.quit(100, 500)
 end
 
 
